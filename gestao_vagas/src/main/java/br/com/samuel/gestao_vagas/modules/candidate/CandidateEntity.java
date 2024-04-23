@@ -1,4 +1,4 @@
-package br.com.samuel.gestao_vagas.modules.candidate.controllers;
+package br.com.samuel.gestao_vagas.modules.candidate;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -25,7 +25,7 @@ public class CandidateEntity {
     private String name;
 
     @NotBlank
-    @Pattern(regexp = "\\s+", message = "O campo [username] não deve conter espaço")
+    @Pattern(regexp = "^\\S+$", message = "O campo [username] não deve conter espaço")
     private String username;
 
     @Email(message = "O campo [email] deve conter um e-mail válido")
