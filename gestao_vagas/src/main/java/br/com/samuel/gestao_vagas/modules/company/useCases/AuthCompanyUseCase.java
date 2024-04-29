@@ -15,7 +15,7 @@ import com.auth0.jwt.algorithms.Algorithm;
 
 import br.com.samuel.gestao_vagas.modules.company.dto.AuthCompanyDTO;
 import br.com.samuel.gestao_vagas.modules.company.repositories.CompanyRepository;
-import ch.qos.logback.core.util.Duration;
+
 
 @Service
 public class AuthCompanyUseCase {
